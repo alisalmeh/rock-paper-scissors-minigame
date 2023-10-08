@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace AliSalmeh_ProjectWeek6.RPSGame_Refactor
+namespace AliSalmeh_ProjectWeek6_RPSGame
 {
     class Program
     {

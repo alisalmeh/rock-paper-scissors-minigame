@@ -7,7 +7,7 @@
             "type": "process",
             "args": [
                 "build",
-                "${workspaceFolder}/AliSalmeh-ProjectWeek6.RPSGame-Refactor.csproj",
+                "${workspaceFolder}/AliSalmeh_ProjectWeek6_RPSGame.csproj",
                 "/property:GenerateFullPaths=true",
                 "/consoleloggerparameters:NoSummary"
             ],
@@ -19,7 +19,7 @@
             "type": "process",
             "args": [
                 "publish",
-                "${workspaceFolder}/AliSalmeh-ProjectWeek6.RPSGame-Refactor.csproj",
+                "${workspaceFolder}/AliSalmeh_ProjectWeek6_RPSGame.csproj",
                 "/property:GenerateFullPaths=true",
                 "/consoleloggerparameters:NoSummary"
             ],
@@ -33,7 +33,7 @@
                 "watch",
                 "run",
                 "--project",
-                "${workspaceFolder}/AliSalmeh-ProjectWeek6.RPSGame-Refactor.csproj"
+                "${workspaceFolder}/AliSalmeh_ProjectWeek6_RPSGame.csproj"
             ],
             "problemMatcher": "$msCompile"
         }
