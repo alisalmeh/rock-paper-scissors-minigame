@@ -7,18 +7,32 @@ namespace AliSalmeh_ProjectWeek6_RPSGame
 {
     public class Player
     {
-        private string _name;
-        private string _choice;
+        public string Name { get; set; }
+        public string Choice { get; set; }
 
         public Player(string name)
         {
-            _name = name;
+            Name = name;
         }
 
-        public void MakeChoice()
+        public string MakeValidChoice()
         {
-            Console.Write($"{_name}, enter ROCK, PAPER, or SCISSORS: ");
-            _choice = Console.ReadLine().ToUpper();
+            Console.Clear();
+            Console.Write($"{Name}, enter ROCK, PAPER, or SCISSORS: ");
+
+            while (true)
+            {
+                string choice = Console.ReadLine().ToUpper();
+
+                if (choice == "ROCK" || choice == "PAPER" || choice == "SCISSORS")
+                {
+                    return Choice = choice;
+                }
+                else
+                {
+                    Console.WriteLine("Invalid choice! Please enter ROCK, PAPER, or SCISSORS.");
+                }
+            }
         }
 
         public void MakeChoiceRandom()
@@ -28,7 +42,25 @@ namespace AliSalmeh_ProjectWeek6_RPSGame
             var choices = new string[] { "ROCK", "PAPER", "SCISSORS" };
             var randomIndex = random.Next(choices.Length);
 
-            _choice = choices[randomIndex];
+            Choice = choices[randomIndex];
+        }
+
+        public static string GetUserName()
+        {
+            while (true)
+            {
+                Console.WriteLine("Please Enter Your Name: ");
+                string name = Console.ReadLine();
+
+                if (string.IsNullOrEmpty(name))
+                {
+                    Console.WriteLine("\"Name\" cannot be empty!");
+                }
+                else
+                {
+                    return name;
+                }
+            }
         }
     }
 }

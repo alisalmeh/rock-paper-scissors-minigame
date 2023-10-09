@@ -9,8 +9,7 @@ namespace AliSalmeh_ProjectWeek6_RPSGame
             Console.Clear();
             Console.WriteLine("Welcome to Rock, Paper, Scissors!");
 
-            Console.Write("Enter your name: ");
-            string playerName = Console.ReadLine();
+            string playerName = Player.GetUserName();
 
             Game game = new Game(playerName);
             game.Play();
