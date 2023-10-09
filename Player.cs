@@ -20,5 +20,15 @@ namespace AliSalmeh_ProjectWeek6_RPSGame
             Console.Write($"{_name}, enter ROCK, PAPER, or SCISSORS: ");
             _choice = Console.ReadLine().ToUpper();
         }
+
+        public void MakeChoiceRandom()
+        {
+            Random random = new Random();
+
+            var choices = new string[] { "ROCK", "PAPER", "SCISSORS" };
+            var randomIndex = random.Next(choices.Length);
+
+            _choice = choices[randomIndex];
+        }
     }
 }
