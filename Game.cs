@@ -9,7 +9,6 @@ namespace AliSalmeh_ProjectWeek6_RPSGame
     {
         private Player _player;
         private Player _computer;
-        private Random _random;
         private int _playerWins;
         private int _computerWins;
         private int _rounds;
@@ -19,7 +18,6 @@ namespace AliSalmeh_ProjectWeek6_RPSGame
         {
             _player = new Player(playerName);
             _computer = new Player("computer");
-            _random = new Random();
             _playerWins = 0;
             _computerWins = 0;
             _rounds = 0;
